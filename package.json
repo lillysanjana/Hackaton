@@ -1,0 +1,26 @@
+{
+  "name": "ai-flashcard-maker",
+  "version": "1.0.0",
+  "description": "An AI-powered flashcard maker using Node.js, React, Vite, and Groq API.",
+  "main": "server/index.js",
+"scripts": {
+  "dev": "concurrently \"npm run server\" \"npm run client\"",
+  "server": "node server/index.js",
+  "client": "cd client && npm run dev",
+  "start": "node server/index.js", 
+  "build": "cd client && npm run build", 
+  "test": "echo \"Error: no test specified\" && exit 1" 
+},
+  "keywords": [],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "groq-sdk": "^0.13.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
